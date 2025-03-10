@@ -6,9 +6,9 @@ description = 'This is my custom processor'
 dependencies {
 
     compile localGroovy()
-    compile group: 'org.apache.nifi', name: 'nifi-utils', version: project.version
-    testCompile group: 'org.apache.nifi', name: 'nifi-mock', version: project.version
-    compileOnly group: 'org.apache.nifi', name: 'nifi-api', version: project.version
+    compile group: 'org.apache.nifi', name: 'nifi-utils', version: project.NiFiVersion
+    testCompile group: 'org.apache.nifi', name: 'nifi-mock', version: project.NiFiVersion
+    compileOnly group: 'org.apache.nifi', name: 'nifi-api', version: project.NiFiVersion
     // Additional dependencies here
 
     testCompile group: 'junit', name: 'junit', version:'4.12'

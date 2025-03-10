@@ -36,7 +36,7 @@ jar {
             defaultAttrs += [
                     'Nar-Dependency-Group'  : parentNar.group,
                     'Nar-Dependency-Id'     : parentNar.name,
-                    'Nar-Dependency-Version': parentNar.version
+                    'Nar-Dependency-Version': parentNar.NiFiVersion
             ]
         }
         attributes(defaultAttrs)

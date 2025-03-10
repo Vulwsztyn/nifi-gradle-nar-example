@@ -1,6 +1,9 @@
 allprojects  {
   group = 'org.apache.nifi'
-  version = '1.23.2'
+  version = project.hasProperty('version') ? project.version : '1.0.0'
+}
+ext {
+  NiFiVersion = '1.23.2'
 }
 
 subprojects {
