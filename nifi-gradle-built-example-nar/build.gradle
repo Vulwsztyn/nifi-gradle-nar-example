@@ -52,5 +52,5 @@ def getWorkingRevision() {
 }
 
 def getWorkingTag() {
-    grgit.tag.list()[0] ?: 'HEAD'
+    grgit.tag.list()[0].fullName ?: 'HEAD'
 }
